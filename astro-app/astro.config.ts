@@ -3,7 +3,7 @@ import { loadEnv } from 'vite';
 import sanity from '@sanity/astro';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
-import { node } from '@astrojs/node';
+import node from '@astrojs/node';
 
 // Load all env vars (public + private) for config-time use
 const {
@@ -33,7 +33,7 @@ export default defineConfig({
 	},
 
 	adapter: node({
-		
+		mode: 'standalone',
 	}),
 
 	integrations: [

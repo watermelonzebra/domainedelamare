@@ -11,6 +11,8 @@
     "dev:studio": "npm run dev --workspace=studio",
     "dev": "npm run dev --workspace=astro-app && npm run dev --workspace=studio",
     "build": "npm run build --workspace=studio && npm run build --workspace=astro-app",
+    "build:astro": "npm run build --workspace=astro-app",
+    "build:studio": "npm run build --workspace=studio",
     "typegen": "npm run typegen --workspace=studio"
   },
   "dependencies": {
