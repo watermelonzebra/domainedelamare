@@ -1,0 +1,19 @@
+{
+  "name": "astro-sanity-project",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "astro-app",
+    "studio"
+  ],
+  "scripts": {
+    "dev:astro": "npm run dev --workspace=astro-app",
+    "dev:studio": "npm run dev --workspace=studio",
+    "dev": "npm run dev --workspace=astro-app && npm run dev --workspace=studio",
+    "build": "npm run build --workspace=studio && npm run build --workspace=astro-app",
+    "typegen": "npm run typegen --workspace=studio"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^5.5.207"
+  }
+}

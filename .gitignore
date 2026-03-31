@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+.vercel/
+.netlify/
+.output/
+
+# Astro
+.astro/
+
+# Environment variables — never commit these
+.env
+.env.local
+.env.*.local
+
+# Sanity Studio build
+studio/dist/
+
+# TypeGen output — commit if small team, gitignore if CI generates it
+# sanity.types.ts
+# schema.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
